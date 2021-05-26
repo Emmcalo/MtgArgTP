@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Mi CSS-->
-    <link rel="stylesheet" href="css/intento3.css" type="text/css"/>
+    <link rel="stylesheet" href="css/maingrid.css" type="text/css"/>
 
-    <!--Bootstrap CSS --> 
+    <!-- Bootstrap CSS 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+-->
 
     <!-- Bootstrap Bundle with Popper
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -22,7 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap" rel="stylesheet"> 
 
-
+    <!-- Animate.CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    -->
     <title>MTGArg Strixhaven</title>
     
     <!--Ver PQ no carga el favicon-->
@@ -30,101 +32,82 @@
 </head>
 
 <body>
-<div class="contenedorGrid">   
-    
-    <!--ver como hacer para que no se se me desborde o usar JUMBOTRON
-        <header class="header"> <img class="header-img" src="/assets/Strixhaven_banner.jpg"> </header> -->
-
-        <nav class="navbar">
-            <ul> <li class="titulo"><i class="fab fa-d-and-d"></i> MTGArg &nbsp;&nbsp;</li>
-                <li ><i class="fas fa-dragon"></i><a href="index.html">&nbsp; Inicio</a></li> 
-                <li ><i class="fas fa-hat-wizard"></i><a href="strix.html">&nbsp; Strixhaven</a></li> 
-                <li ><i class="fas fa-fist-raised"></i><a href="boosterdraft.html">&nbsp; Booster Draft</a></li> 
-                <li ><i class="fas fa-bomb"></i><a href="bomb.html">&nbsp; Bomb Picks</a></li>
-                <li><i class="fas fa-layer-group"></i><a href="challengerdecks.html">&nbsp; Challenger Decks</a></li> 
-                <li ><i class="fas fa-envelope"></i><a href="contacto.html">&nbsp; Contacto</a> </li>
+    <header>  
+        <nav>
+            <ul class="menu" > 
+                <li class="logo"><i class="fab fa-d-and-d" id="logo"></i><a> &nbsp; MTGArg</a></li> 
+                <li class="item"><i class="fas fa-dragon"></i><a href="index.html">&nbsp; Inicio</a></li> 
+                <li class="item"><i class="fas fa-hat-wizard"></i><a href="strix.html">&nbsp; Strixhaven</a></li> 
+                <li class="item"><i class="fas fa-fist-raised"></i><a href="boosterdraft.html">&nbsp; Booster Draft</a></li> 
+                <li class="item"><i class="fas fa-bomb"></i><a href="bomb.html">&nbsp; Bomb Picks</a></li>
+                <li class="item"><i class="fas fa-layer-group"></i><a href="challengerdecks.html">&nbsp; Challenger Decks</a></li> 
+                <li class="item"><i class="fas fa-envelope"></i><a href="contacto.html">&nbsp; Contacto</a> </li>
+                <!--<li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> -->
             </ul> 
         </nav>
-    
-        
+    </header>
 
-    <main class="content">
+<div class="content-main">
+    <main>
 
-       <article class="article">
-
-        <h1><i class="fas fa-hat-wizard"></i> Mecánicas de Strixhaven</h1><br>
-
-        <p>Esta nueva ambientación de Magic está repleta de exámenes, profesores y montones de artimañas. Además, la Biblioplex de Strixhaven alberga algunos de los hechizos más poderosos del Multiverso, por lo que es el lugar perfecto para refinar nuestras habilidades como magos.</p>
-
-       </article>
-
-
+       <div><h1> Mecánicas de Strixhaven</h1><br>
+        <p> </p>
+        </div>
        
-        <article class="article"> <h2>Lecciones</h2> <br> <p>Lección (lesson) es un nuevo subtipo de conjuros e instantáneos, y que si bien no tiene reglas asociadas, sirve como marcador para que las reglas y efectos puedan referenciar a las cartas, como claramente acabamos de aprender. 
+        <div> <h2>Lecciones</h2> <br> <p>Lección (lesson) es un nuevo subtipo de conjuros e instantáneos, y que si bien no tiene reglas asociadas, sirve como marcador para que las reglas y efectos puedan referenciar a las cartas, como claramente acabamos de aprender. 
 
-        Como podemos ver, hay hechizos de instantáneo y conjuro incoloros, estas serán las lecciones básicas que todo estudiante debería saber hasta que decida en que enfocará sus estudios. Y si bien aprender nos permite buscar lecciones desde fuera del juego (esto es, nuestro sideboard en torneos sancionados, o cualquier carta que poseamos en otros entornos), tranquilamente podemos incluir las lecciones en nuestro mazo principal y lanzarlos como cualquier otro instantáneo o conjuro.</p>
-                <img class="article-img" src="https://media.wizards.com/2021/stx/sp_yh4p4W4O4x.png">
-    </article>
+        Como podemos ver, hay hechizos de instantáneo y conjuro incoloros, estas serán las lecciones básicas que todo estudiante debería saber hasta que decida en que enfocará sus estudios. Y si bien aprender nos permite buscar lecciones desde fuera del juego (esto es, nuestro sideboard en torneos sancionados, o cualquier carta que poseamos en otros entornos), tranquilamente podemos incluir las lecciones en nuestro mazo principal y lanzarlos como cualquier otro instantáneo o conjuro.</p></div>
 
-    <article class="article"> <h2>Hechicería (Magecraft)</h2><br>
+    <div> <h2>Hechicería (Magecraft)</h2><br>
     
         <p>Cuanto más estudiemos y perfeccionemos nuestros hechizos, mejores y mas poderosos magos seremos. Esta condición es lo que se representa con la nueva habilidad de palabra clave: Hechicería.
 
             Esta habilidad destaca habilidades disparadas que disparan siempre que lancemos o copiemos un instantáneo o conjuro, y los efectos varían caso a caso, ya sean jóvenes estudiantes o notables profesores</p>
-            <img class="article-img" src="https://media.wizards.com/2021/stx/sp_K0XQIjqF61.png">
-    </article>
+    </div>
 
-    <article class="article"><h2>Rebatir (Ward)</h2><br>
+    <div><h2>Rebatir (Ward)</h2><br>
     
 
         <p>Rebatir [coste], es una habilidad disparada que dispara siempre uno de nuestros permanentes sea objetivo de un hechizo o habilidad controlado por un oponente, será contrarrestado a menos que su controlador pague [coste]. Si quieres ganarme, esfuérzate.
 
             Los costes de rebatir, también varían caso a caso, como por ejemplo, pago extra de maná, o vidas, entre otros.</p>
+    </div>
 
-            <img class="article-img" src="https://media.wizards.com/2021/stx/sp_FQsHDpJIcN.png">
-    </article>
-
-    <article class="article"> <h2>Cartas modales de dos caras</h2><br>
+    <div> <h2>Cartas modales de dos caras</h2><br>
     
         <p>Otro de los aspectos fundamentales de la educación es reconocer, conciliar, discutir y a aprender de diferentes puntos de vista, aun dentro de una misma facultad o carrera. Eso se demuestra, en parte, con cartas modales de dos caras, con la particularidad, respecto a las que ya conocimos en Zendikar y Kaldheim, que en esta ocasión, hay cartas con hechizos de instantáneo o conjuro en la parte posterior. Las reglas no cambiaron, pero ahora “un conjuro puede ser tu comandante”, es decir, en commander, si nuestro comandante es una carta modal de dos caras en la que la parte posterior es un instantáneo o conjuro, podremos lanzar la cara posterior desde la zona de mando.</p>
+    </div>
 
-        <img style="margin-inline: 150px;" src="https://media.wizards.com/2021/stx/sp_PauVZ3uUba.png">
-
-        <img src="https://media.wizards.com/2021/stx/sp_PKptLdX1OS.png">
-
-    </article>
-
-    <article class="article"><h2>Demostrar (Demostrate)</h2><br> <p>Demostrar es una una habilidad disparada de hechizos de instantáneo o conjuro, que, al lanzarlo, nos permite copiarlo y que un oponente también lo copie, y en ese caso, cada jugador puede elegir nuevos objetivos para las copias.</p>
-    
-    <img class="article-img" src="https://media.wizards.com/2021/stx/sp_OXoQm5E9qj.png">
-    
-    </article>
+    <div><h2>Demostrar (Demostrate)</h2><br> <p>Demostrar es una una habilidad disparada de hechizos de instantáneo o conjuro, que, al lanzarlo, nos permite copiarlo y que un oponente también lo copie, y en ese caso, cada jugador puede elegir nuevos objetivos para las copias.</p></div>
 
     </main>
 
-    <footer class="footer">
-            
+    <footer class="grid-footer">
             <div>
                 <a class="enlace-footer" href="html/contacto.html"> <i class="fas fa-envelope"></i> Contactanos</a>
             <br>
             <br>
+            <div>
                 <a class="enlace-social" href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
                 <a class="enlace-social" href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a> 
                 <a class="enlace-social"href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
-        
-            <br> <br>
+            </div>
+            <br>
+            <div>
                 <form>
-                <label  style="color: white" for="email">Suscribite pare recibir novedades</label> <br> 
+                <label  style="color: white" for="email">Suscribite pare recibir novedades</label> <br>
                 <input type="email" name="email" placeholder="Ingrese su direccion de correo" style="width: auto;">
                 &nbsp;
                 <input type="submit" value="Subscribir">
                 </form>
                 <br>
             </div>
-        
+        </div>
+            
+
         <div>
             
-            <p style="color: white; text-align: center;"><i class="fas fa-dice-d20"></i>  Enlaces útiles</p>
+            <p style="color: white;"><i class="fas fa-dice-d20"></i>  Enlaces útiles</p>
             <ul class="ul-footer-enlaces">  
                 <br>
                 
@@ -153,6 +136,6 @@
             </div>
         </div>
     </footer>
-</div> 
+</div>
 </body>
 </html>

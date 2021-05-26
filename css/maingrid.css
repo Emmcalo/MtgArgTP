@@ -6,6 +6,7 @@
 strong {
   font-weight: bold;
 }
+
 /*GENERAL*/
  nav { 
   background: #222; 
@@ -46,14 +47,20 @@ strong {
  
 
   /*Footer*/
-  footer { background: #222; padding: 10px 20px; position: relative;}
+  footer { 
+    background: #222; 
+    padding: 10px 20px;
+   
+    ;}
   footer a { color: white; text-decoration: none; } 
   footer a:hover{ text-decoration: underline;}
  
   footer ul { color: white; }
   footer ul li { padding-top: 10px;
                  padding-bottom: 10px;}
-                 
+        
+.grid-footer {display:flex; grid-area: b;
+justify-content: center;}                 
 .div-footer{ 
                   display: flex; 
                   flex-flow: column wrap; 
@@ -64,10 +71,6 @@ strong {
 .div-footer-middle {order: 1;}
 .div-footer-der {order: 2;}
 
-.enlace-social{
-    font-size: 30px;
-    margin: 1.5px;
-  }
   
 .enlace-social > :hover{
     animation-fill-mode:inherit;
@@ -152,7 +155,7 @@ strong {
   width: 70%;
 }
 
-main{margin: auto;margin-top: 0px;}
+main{margin: auto;margin-top: 2em;margin-bottom: 3em; grid-area: a;}
 
 .flex-main{
   display: flex;
@@ -191,7 +194,40 @@ main{margin: auto;margin-top: 0px;}
   flex-shrink: 2;
 }
 
+/*GRID*/
 
+.content-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  grid-auto-rows: 300px;
+  grid-template-areas:
+    ". a a a ."
+    "b b b b b";
+}
+
+.item1G {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+}
+
+.item1G div{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.item2G {
+  grid-area: b;
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+.item2G div{
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
 
 
 /*ESCRITORIO*/
@@ -207,6 +243,16 @@ main{margin: auto;margin-top: 0px;}
   .logo { order: 0; } 
   .menu li { padding: 15px 10px; } 
   
+  .content-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    grid-auto-rows: 300px;
+    grid-template-areas:
+      ". a a a ."
+      "b b b b b";
+  }
+
   /*HEADER IMG*/
   .header-img {
     align-self: center;
@@ -226,6 +272,19 @@ main{margin: auto;margin-top: 0px;}
 
 .flex-main{align-content:center; align-items:flex-start; justify-content:center;}
 .div-footer{ flex-flow: row; flex-wrap: wrap;}
+
+.content-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  grid-auto-rows: 10px;
+  grid-template-areas:
+     ". a a ."
+     "b b b b";
+}
+.item1G {
+  grid-column: a / a ;}
+.item2G{ grid-column: b / b;}
 .logo { order: 0; } 
 .item { width: auto; order: 1;  } 
 .header-img {
